@@ -66,7 +66,7 @@ export default function Education() {
       title={`Course & Education`}
       data={educationData}
       DetailComponent={EducationDetails}
-      className="mb-40"
+      className="mb-48"
     />
   );
 }

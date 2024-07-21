@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const MotionLink = motion(Link);
 
-export function Logo() {
+export function Logo({ onClick }) {
   return (
     <div className="flex items-center justify-center mt-2">
       <MotionLink
@@ -22,6 +22,7 @@ export function Logo() {
           ],
           transition: { duration: 1, repeat: Infinity },
         }}
+        onClick={onClick}
       >
         My Portfolio
       </MotionLink>

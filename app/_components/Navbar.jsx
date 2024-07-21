@@ -162,7 +162,7 @@ export default function Navbar() {
       </div>
 
       <div className="hidden lg:block">
-        <Logo />
+        <Logo onClick={handleClose} />
       </div>
 
       {isOpen ? (
