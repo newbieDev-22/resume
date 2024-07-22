@@ -215,10 +215,7 @@ py-32"
             <button
               className={`ml-3 sm:ml-0 flex items-center justify-center rounded-full p-1 w-10 h-10 
       ${theme === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
-              onClick={() => {
-                setTheme(theme === "light" ? "dark" : "light");
-                handleClose();
-              }}
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             >
               {theme === "dark" ? (
                 <SunIcon className={"fill-dark"} />
